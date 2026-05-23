@@ -1,0 +1,329 @@
+@layer components {
+  /* Hover */
+
+  .hover-card {
+    @apply hover:bg-white/10 transition-colors duration-200 cursor-pointer;
+  }
+
+  .hover-card-dark {
+    @apply hover:bg-white/5 transition-colors duration-200 cursor-pointer;
+  }
+
+  .hover-rounded {
+    @apply rounded-full;
+  }
+
+  .hover-rounded-lg {
+    @apply rounded-lg;
+  }
+
+  .hover-rounded-xl {
+    @apply rounded-xl;
+  }
+
+  .hover-rounded-2xl {
+    @apply rounded-2xl;
+  }
+
+  /* Flex Box */
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-gap-1 {
+    @apply flex items-center gap-1;
+  }
+
+  .flex-gap-2 {
+    @apply flex items-center gap-2;
+  }
+
+  .flex-gap-3 {
+    @apply flex items-center gap-3;
+  }
+
+  .flex-gap-4 {
+    @apply flex items-center gap-4;
+  }
+
+  /* Buttons */
+
+  .btn-post {
+    @apply bg-[#787A73] text-black px-4 sm:px-5 py-1.5 sm:py-2 mt-2 rounded-full font-bold cursor-not-allowed text-sm sm:text-base shrink-0;
+  }
+
+  .btn-follow {
+    @apply bg-white text-sm text-black font-medium px-4 py-1 rounded-full cursor-pointer transition-colors duration-200;
+  }
+
+  .btn-follow:hover {
+    @apply bg-gray-100;
+  }
+
+  .btn-subscribe {
+    @apply bg-white text-black font-medium px-4 py-1 rounded-full cursor-pointer duration-200;
+  }
+  
+  .btn-subscribe:hover {
+    @apply bg-white/30 text-white;
+  }
+
+  .btn-show-more {
+    @apply w-full text-blue-500 px-4 py-2 rounded-full transition-colors duration-200 cursor-pointer;
+  }
+
+  .btn-show-more:hover {
+    @apply bg-white/10;
+  }
+
+  /* Icon Btns */
+
+  .icon-btn-blue {
+    @apply p-1.5 sm:p-2 rounded-full text-[20px] sm:text-[24px] text-blue-500 cursor-pointer transition-colors duration-200;
+  }
+
+  .icon-btn-blue:hover {
+    @apply bg-blue-500/10;
+  }
+
+  .icon-btn-gray {
+    @apply p-1 rounded-full text-gray-600 cursor-pointer transition-colors duration-200;
+  }
+
+  .icon-btn-gray:hover {
+    @apply bg-blue-500/20;
+  }
+
+  /* Action Btns*/
+
+  .action-btn-size {
+    @apply text-[16px] sm:text-[18px];
+  }
+
+  .action-btn-blue,
+  .action-btn-green,
+  .action-btn-red {
+    @apply flex items-center gap-1 sm:gap-2 p-1 sm:px-3 rounded-full transition-colors duration-200 cursor-pointer shrink-0;
+  }
+
+  .action-btn-blue span:last-child{
+    @apply text-xs sm:text-sm;
+  }
+
+  .action-btn-blue:hover {
+    @apply text-blue-400 bg-blue-500/10;
+  }
+
+  .action-btn-green:hover {
+    @apply text-green-400 bg-green-500/10;
+  }
+
+  .action-btn-red:hover {
+    @apply text-pink-400 bg-red-500/10;
+  }
+
+  /* Avatars */
+
+  .avatar {
+    @apply w-10 h-10 rounded-full overflow-hidden cursor-pointer;
+  }
+
+  .avatar-sm {
+    @apply w-8 h-8 rounded-full object-cover;
+  }
+
+  .avatar-md {
+    @apply w-10 h-10 rounded-full object-cover shrink-0;
+  }
+
+  .avatar-lg {
+    @apply w-12 h-12 rounded-full object-cover;
+  }
+
+  /* Posts */
+
+  .post-card {
+    @apply w-full border-b border-b-gray-800 flex flex-col gap-4 px-4 py-3 transition-colors duration-200 cursor-pointer;
+  }
+
+  .post-card:hover {
+    @apply bg-white/5;
+  }
+
+  .post-body {
+    @apply mt-2 text-base sm:text-lg min-w-0;
+  }
+
+  .post-acc-name {
+    @apply gap-2 min-w-0
+  }
+
+  .post-img-wrap {
+    @apply p-6 mx-auto overflow-hidden rounded-2xl;
+  }
+
+  .post-img-style {
+    @apply rounded-2xl border border-white/10 w-full max-w-full h-auto object-cover;
+  }
+
+  .post-meta {
+    @apply text-sm text-gray-600;
+  }
+
+  .post-text {
+    @apply flex flex-col gap-2 mb-3 text-sm;
+  }
+
+  /* Tabs */
+
+  .tab-active {
+    @apply w-full text-center py-3 font-bold cursor-pointer transition-colors duration-200;
+  }
+
+  .tab-active:hover {
+    @apply bg-white/10;
+  }
+
+  .tab-inactive {
+    @apply w-full text-center py-3 text-gray-700 cursor-pointer transition-colors duration-200;
+  }
+
+  .tab-inactive:hover {
+    @apply bg-white/10;
+  }
+
+  /* Sidebar */
+
+  .sidebar-item {
+    @apply flex justify-center items-center p-2 text-xl font-bold rounded-full cursor-pointer w-fit transition-colors duration-200;
+  }
+
+  .sidebar-item:hover {
+    @apply bg-white/10;
+  }
+
+  .sidebar-icon {
+    @apply text-[33px];
+  }
+
+  /* sidebar post btn */
+
+  .sidebar-post-btn {
+    @apply w-full bg-white text-black py-2 my-3 rounded-full font-medium text-xl hidden lg:block transition-colors duration-200;
+  }
+
+  .sidebar-post-btn:hover {
+    @apply bg-gray-100 opacity-80 cursor-pointer;
+  }
+
+  /* Links */
+
+  .link-blue {
+    @apply text-blue-500;
+  }
+
+  .link-blue:hover {
+    @apply underline decoration-blue-500;
+  }
+
+  .footer-link {
+    @apply hover:underline transition-colors duration-200 px-2;
+  }
+
+  /* Panels */
+
+  .panel-box {
+    @apply bg-transparent border border-gray-800 rounded-2xl px-4 py-2;
+  }
+
+  .panel-title {
+    @apply text-xl font-bold mb-2;
+  }
+
+  /* Search */
+
+  .search-wrapper {
+    @apply flex items-center gap-2 px-4 py-2 my-1 border border-gray-800 rounded-full bg-black;
+  }
+
+  .search-input {
+    @apply bg-transparent outline-none text-white placeholder:text-gray-500 w-full;
+  }
+
+  /* Chat */
+
+  .glass-header {
+    @apply sticky top-0 bg-black/70 backdrop-blur-md z-20;
+  }
+
+  .chat-item {
+    @apply flex items-center gap-3 px-4 py-3 border-b border-gray-800 hover:bg-white/5 cursor-pointer;
+  }
+
+  .chat-bubble {
+    @apply px-4 py-2 rounded-2xl text-sm max-w-md;
+  }
+
+  .chat-bubble-dark {
+    @apply bg-white/10;
+  }
+
+  .chat-bubble-blue {
+    @apply bg-blue-500 text-black;
+  }
+
+  .message-input-bar {
+    @apply flex items-center gap-3 bg-white/5 rounded-full px-4 py-2;
+  }
+
+  /* Message Settings */
+
+  .message-settings {
+    @apply p-4;
+  }
+
+  .message-settings-card {
+    @apply bg-white/[0.03] border border-gray-800 rounded-2xl p-4 hover:bg-white/[0.05] transition-colors duration-200;
+  }
+
+  .message-settings-btn {
+    @apply w-full bg-white text-black font-medium py-2 rounded-full hover:bg-gray-200 transition-colors duration-200 cursor-pointer;
+  }
+
+  /* Follow Cards */
+
+  .follow-card {
+    @apply hover:bg-white/10 transition-colors duration-200 cursor-pointer rounded-lg p-2 flex items-center justify-between;
+  }
+
+  /* Trend Cards */
+
+  .trend-card {
+    @apply flex justify-between items-center hover:bg-white/10 transition-colors duration-200 cursor-pointer rounded-lg px-3 py-2;
+  }
+
+  .trend-meta {
+    @apply text-gray-600 text-sm;
+  }
+
+  /* Bottom Nav-Item */
+
+  .bottom-nav-item {
+    @apply flex flex-col items-center gap-[2px] px-4 py-1.5 rounded-full cursor-pointer no-underline text-white;
+  }
+
+  .bottom-nav-icon {
+    @apply text-[28px];
+  }
+
+  .bottom-nav {
+    @apply fixed bottom-0 left-0 right-0 z-50 bg-black border-t border-gray-800 flex justify-around items-center py-2;
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+
+}

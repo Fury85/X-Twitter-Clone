@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat / X</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+</head>
+
+<body class="bg-black text-white">
+    <div class="w-full max-w-[1400px] flex justify-center mx-auto relative overflow-x-hidden">
+
+        <div class="hidden min-[500px]:flex xl:w-24 flex-col items-center mx-4 sticky top-0 h-screen">
+            <div class="logo invert mx-1 my-3.25 hover:cursor-pointer">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-7.5 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+
+            <ul class="flex flex-col items-center gap-2">
+                <li data-nav class="sidebar-item">
+                    <a href="/index.html">
+                        <span class="material-symbols-outlined sidebar-icon">home</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="explore.html">
+                        <span class="material-symbols-outlined sidebar-icon">search</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="notifications.html">
+                        <span class="material-symbols-outlined sidebar-icon">notifications</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="follow.html">
+                        <span class="material-symbols-outlined sidebar-icon">person_add</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="chat.html">
+                        <span class="material-symbols-outlined sidebar-icon">mail</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="#">
+                        <span class="material-symbols-outlined sidebar-icon">auto_awesome</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="profile.html">
+                        <span class="material-symbols-outlined sidebar-icon">person</span>
+                    </a>
+                </li>
+
+                <li data-nav class="sidebar-item">
+                    <a href="">
+                        <span class="material-symbols-outlined sidebar-icon">pending</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="post-btn mt-2">
+                <button
+                    class="md:flex w-12 h-12 items-center justify-center bg-white text-black rounded-full hover:bg-gray-100 cursor-pointer">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+            </div>
+
+            <div class="mt-8">
+                <div class="avatar hover-card hover-rounded">
+                    <img src="/assets/images/farhan.jpeg" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Box -->
+
+        <div class="flex w-full max-w-[700px] min-w-0 border-x border-gray-800 h-screen">
+            <div class="w-full min-[1080px]:w-[380px] flex-col border-r border-gray-800">
+                <div class="glass-header border-b border-gray-800 px-4 py-3">
+                    <h2 class="text-xl font-bold">Messages</h2>
+                </div>
+
+                <div chat-box class="flex-1 overflow-y-auto">
+                    <div class="chat-item">
+                        <div>
+                            <img src="/assets/images/anees.jpeg" class="avatar-md">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between gap-2 min-w-0">
+                                <span class="font-bold text-sm sm:text-base truncate">Muhammad Anees</span>
+                                <span class="text-[10px] sm:text-xs text-gray-500 shrink-0">2h</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-400 truncate">
+                                Hey, are we still on for the meeting tomorrow?
+                            </p>
+                        </div>
+                        <span class="p-1 w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
+                    </div>
+
+                    <div class="chat-item">
+                        <div>
+                            <img src="/assets/images/haider.jpeg" class="avatar-md">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between gap-2 min-w-0">
+                                <span class="font-bold text-sm sm:text-base truncate">Haider Farooq</span>
+                                <span class="text-[10px] sm:text-xs text-gray-500 shrink-0">1d</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-400 truncate">
+                                Let’s collaborate on the next project
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden min-[1080px]:flex flex-1 min-w-0 flex-col">
+                <div class="glass-header border-b border-gray-800 px-4 py-3 flex-gap-3 z-20 cursor-pointer">
+                    <img src="/assets/images/anees.jpeg" class="avatar-md">
+                    <div>
+                        <p class="font-bold">Muhammad Anees</p>
+                        <p class="post-meta">@muhammadanees</p>
+                    </div>
+                    <span class="material-symbols-outlined text-blue-500 ml-auto">verified</span>
+                </div>
+
+                <div data-chat-box class="flex-1 overflow-y-auto px-4 py-6 space-y-4">
+                    <div class="flex-gap-3">
+                        <img src="/assets/images/anees.jpeg" class="avatar-sm">
+                        <div class="chat-bubble chat-bubble-dark">
+                            Hey, did you check the new design updates?
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <div class="chat-bubble chat-bubble-blue">
+                            Yes looks premium and very clean
+                        </div>
+                    </div>
+
+                    <div class="flex-gap-3">
+                        <img src="/assets/images/anees.jpeg" class="avatar-sm">
+                        <div class="chat-bubble chat-bubble-dark">
+                            Great, let’s finalize it tomorrow
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 px-4 py-3">
+                    <div class="message-input-bar">
+                        <span class="material-symbols-outlined text-gray-400 cursor-pointer">image</span>
+                        <input data-chat-input class="search-input flex-1 text-sm" placeholder="Start a new message">
+                        <span data-chat-send class="material-symbols-outlined text-blue-500 cursor-pointer">send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden min-[1080px]:flex w-[320px] xl:w-[350px] shrink-0 flex-col h-screen px-3">
+            <div class="glass-header bg-black px-4 py-3">
+                <div class="search-wrapper">
+                    <span class="material-symbols-outlined text-gray-500">search</span>
+                    <input class="search-input" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="message-settings">
+
+                <div class="message-settings-card">
+                    <div class="flex-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">
+                                Message requests
+                            </h3>
+
+                            <p class="text-sm text-gray-400 mt-1 leading-relaxed">
+                                Review messages from people you don’t follow.
+                            </p>
+                        </div>
+
+                        <span class="material-symbols-outlined text-blue-500">
+                            mail
+                        </span>
+                    </div>
+
+                    <button class="message-settings-btn mt-4">
+                        View requests
+                    </button>
+                </div>
+
+                <div class="message-settings-card mt-4">
+                    <div class="flex-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">
+                                Message settings
+                            </h3>
+
+                            <p class="text-sm text-gray-400 mt-1 leading-relaxed">
+                                Control who can message you and manage privacy settings.
+                            </p>
+                        </div>
+
+                        <span class="material-symbols-outlined text-gray-300">
+                            settings
+                        </span>
+                    </div>
+
+                    <button class="message-settings-btn mt-4">
+                        Open settings
+                    </button>
+                </div>
+
+                <div class="message-settings-card mt-4">
+                    <div class="flex-gap-3">
+                        <span class="material-symbols-outlined text-green-400">
+                            lock
+                        </span>
+
+                        <div>
+                            <h3 class="font-bold text-white">
+                                Your messages are private
+                            </h3>
+
+                            <p class="text-sm text-gray-400 mt-1">
+                                Conversations stay secure and only visible to participants.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="bottomnav"></div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/bottomnav.js"></script>
+</body>
+
+</html>

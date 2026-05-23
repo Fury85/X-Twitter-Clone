@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore / X</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+
+
+</head>
+
+<body class="bg-black text-white">
+    <div class="w-full max-w-[1400px] flex justify-center mx-auto relative overflow-x-hidden">
+
+        <div class="hidden min-[500px]:flex w-20 lg:w-[280px] xl:w-[320px] shrink-0 items-center flex-col sticky top-0 h-screen">
+            <div id="sidebar"></div>
+        </div>
+
+        <main id="homeFeed" class="flex-1 min-w-0 max-w-[620px] lg:max-w-[700px] border-x border-gray-800">
+            <div class="glass-header bg-black z-10 p-4 border-b border-gray-800">
+                <div class="search-wrapper backdrop-blur-md bg-black/70">
+                    <span class="material-symbols-outlined text-gray-500">search</span>
+                    <input placeholder="Search" class="search-input" />
+                </div>
+            </div>
+
+            <div class="flex border-b border-gray-800 min-[500px]:overflow-visible overflow-x-auto scrollbar-hide">
+                <div class="min-w-fit min-[500px]:flex-1 p-4 text-center hover-card shrink-0">
+                    <span class="font-bold border-b-4 border-blue-500 py-3.5 text-sm sm:text-base whitespace-nowrap"> For you</span>
+                </div>
+                <div class="min-w-fit min-[500px]:flex-1 p-4 text-center text-white/50 hover-card">
+                    <span class="text-sm sm:text-base whitespace-nowrap"> Trending</span>
+                </div>
+                <div class="min-w-fit min-[500px]:flex-1 p-4 text-center text-white/50 hover-card">
+                    <span class="text-sm sm:text-base whitespace-nowrap"> News</span>
+                </div>
+                <div class="min-w-fit min-[500px]:flex-1 p-4 text-center text-white/50 hover-card">
+                    <span class="text-sm sm:text-base whitespace-nowrap"> Sports</span>
+                </div>
+                <div class="min-w-fit min-[500px]:flex-1 p-4 text-center text-white/50 hover-card">
+                    <span class="text-sm sm:text-base whitespace-nowrap">Entertainment</span>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="../assets/images/anees.jpeg" class="w-full h-56 sm:h-72 object-cover" />
+                <div class="absolute bottom-0 w-full p-4 bg-linear-to-t from-black">
+                    <p class="text-sm text-gray-400">World · LIVE</p>
+                    <h2 class="text-xl font-bold">
+                        Breaking: Major global event unfolding
+                    </h2>
+                </div>
+            </div>
+
+            <div class="divide-y divide-gray-800">
+                <div class="p-4 hover-card-dark">
+                    <p class="post-meta">Technology</p>
+                    <h3 class="font-bold text-lg">AI is changing the future of coding</h3>
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                        class="mt-3 hover-rounded-xl w-full h-44 sm:h-56 object-cover" />
+                </div>
+
+                <div class="p-4 hover-card-dark">
+                    <p class="post-meta">Sports</p>
+                    <h3 class="font-bold text-lg">World Cup 2025 preparations begin</h3>
+                    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a"
+                        class="mt-3 hover-rounded-xl w-full h-44 sm:h-56 object-cover" />
+                </div>
+
+                <div class="p-4 hover-card-dark">
+                    <p class="post-meta">Entertainment</p>
+                    <h3 class="font-bold text-lg">Top movies releasing this month</h3>
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
+                        class="mt-3 hover-rounded-xl w-full h-44 sm:h-56 object-cover" />
+                </div>
+            </div>
+        </main>
+
+        <div class="hidden lg:flex lg:w-[300px] xl:w-[350px] flex-col mx-7 my-10 relative">
+            <div class="search-btn w-[280px] xl:w-[320px] fixed top-0 bg-black z-40">
+                <div class="px-4 mt-3 border-2 border-gray-800 rounded-full">
+                </div>
+            </div>
+
+            <!-- Live on X -->
+            <div class="w-[280px] xl:w-[320px] panel-box">
+                <h2 class="panel-title">Live on X</h2>
+                <div class="p-2 hover-card hover-rounded-2xl">
+                    <div class="flex items-center gap-1">
+                        <svg viewBox="0 0 256 256" class="w-5.5 fill-white">
+                            <path
+                                d="M128 8c-9 22-22 39-39 56-18 18-27 34-27 55 0 36 29 65 66 65s66-29 66-65c0-21-9-37-27-55-17-17-30-34-39-56z" />
+                        </svg>
+                        <span class="font-medium text-sm">Al Jazeera English</span>
+                        <span class="material-symbols-outlined text-yellow-400 text-[18px]">verified</span>
+                        <span class="trend-meta">is hosting</span>
+                    </div>
+                    <h3 class="font-bold text-xl ml-2">Live: Al Jazeera English</h3>
+                </div>
+
+                <div class="live p-2 hover-card hover-rounded-2xl">
+                    <div class="flex items-center gap-1">
+                        <svg viewBox="0 0 256 256" class="w-5.5 fill-white">
+                            <path
+                                d="M128 8c-9 22-22 39-39 56-18 18-27 34-27 55 0 36 29 65 66 65s66-29 66-65c0-21-9-37-27-55-17-17-30-34-39-56z" />
+                        </svg>
+                        <span class="font-medium text-sm">Ten Sports</span>
+                        <span class="material-symbols-outlined text-yellow-400 text-[18px]">verified</span>
+                        <span class="trend-meta">is hosting</span>
+                    </div>
+                    <h3 class="font-bold text-xl ml-2">Live: Ten Sports</h3>
+                </div>
+            </div>
+
+            <!-- Today's top trends -->
+            <div class="today-box w-[280px] xl:w-[320px] my-4 panel-box">
+                <h2 class="panel-title">Today's top trends</h2>
+                <div class="trend-card">
+                    <div>
+                        <p class="trend-meta">Trending in Pakistan<span
+                                class="mx-1 text-gray-500 font-bold">·</span>Trending</p>
+                        <h3 class="font-bold">#PakistanZindabad</h3>
+                        <p class="trend-meta">12.3K Tweets</p>
+                    </div>
+                    <div class="dot-icon">
+                        <span class="material-symbols-outlined text-gray-600">more_horiz</span>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <div>
+                        <p class="trend-meta">Trending in Technology<span
+                                class="mx-1 text-gray-500 font-bold">·</span>Trending</p>
+                        <h3 class="font-bold">#AIRevolution</h3>
+                        <p class="trend-meta">45.6K Tweets</p>
+                    </div>
+                    <div class="dot-icon">
+                        <span class="material-symbols-outlined text-gray-600">more_horiz</span>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <div>
+                        <p class="trend-meta">Trending in Sports<span
+                                class="mx-1 text-gray-500 font-bold">·</span>Trending</p>
+                        <h3 class="font-bold">#WorldCup2025</h3>
+                        <p class="trend-meta">78.9K Tweets</p>
+                    </div>
+                    <div class="dot-icon">
+                        <span class="material-symbols-outlined text-gray-600">more_horiz</span>
+                    </div>
+                </div>
+                <div class="btn-more">
+                    <button class="btn-show-more">
+                        Show more
+                    </button>
+                </div>
+            </div>
+
+            <!-- Who to follow -->
+            <div class="w-[280px] xl:w-[320px] panel-box">
+                <h2 class="panel-title">Who to follow</h2>
+
+                <div class="follow-card">
+                    <div class="avatar-md overflow-hidden">
+                        <img src="/assets/images/anees.jpeg" alt="Muhammad Anees" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Muhammad Anees</h3>
+                        <p class="trend-meta">@muhammadanees</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button data-follow class="btn-follow">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="follow-card my-5">
+                    <div class="img-box avatar-md overflow-hidden">
+                        <img src="/assets/images/zargham.jpeg" alt="Zargham Ali" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Zargham Ali</h3>
+                        <p class="trend-meta">@zarghamali</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button data-follow class="btn-follow">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="follow follow-card">
+                    <div class="img-box avatar-md overflow-hidden">
+                        <img src="/assets/images/haider.jpeg" alt="Haider Farooq" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Haider Farooq</h3>
+                        <p class="trend-meta">@haiderfarooq</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button data-follow class="btn-follow">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="btn-more my-2">
+                    <button class="btn-show-more">
+                        Show more
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer w-[280px] xl:w-[320px] text-gray-600 my-4">
+                <p class="text-justify text-xs">
+                    <a href="" class="footer-link">Terms of Service |</a>
+                    <a href="" class="footer-link">Privacy Policy |</a>
+                    <a href="" class="footer-link">Cookie Policy |</a>
+                    <a href="" class="footer-link">Accessibility |</a>
+                    <a href="" class="footer-link">Ads info |</a>
+                    <a href="" class="footer-link">More</a>
+                    <span class="px-2">© 2025 X Corp.</span>
+                </p>
+            </div>
+        </div>
+    </div>    
+
+    <div id="bottomnav"></div>
+
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/bottomnav.js"></script>
+</body>
+
+</html>
